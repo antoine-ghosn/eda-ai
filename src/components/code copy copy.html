@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EDA Profile Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark font-display group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-[#111318] dark:text-white flex size-12 shrink-0 items-center justify-start" data-icon="ArrowLeft" data-size="24px" data-weight="regular">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h2 class="text-[#111318] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Profile</h2>
+<div class="flex size-12 shrink-0 items-center"></div>
+</div>
+<main class="flex-grow pb-40">
+<!-- Profile Header -->
+<div class="flex p-4 @container mt-4">
+<div class="flex w-full flex-col gap-4 items-center">
+<div class="flex gap-4 flex-col items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32" data-alt="User's profile picture showing a person smiling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7-h_IBjPdHap4UPrztoaoLpvrEQmQIQVpQ_7R81jiHEtmBMuwHwlQs4qOcRbpJfN9vl4Ehi1lM05mHMq6EqOeMhTL5Gp9jdLL0Bh0ehK0GMa-jHS2DmYhcp6JAT-g0pCVuucnfC9ZUASxGZYhu37eBzJSRtCa1gHscRQ0-XJQADatu464F9-uzp0nznWxMVXPj7FhlNyyhzewUg3pX50duymqwfpIaDI3MzzKQSDUsqqXJETgVTyROd71AE7EBMhOtBa9sAQMhFef");'></div>
+<div class="flex flex-col items-center justify-center justify-center">
+<p class="text-[#111318] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Alex Doe</p>
+<p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-normal text-center">alex.doe@example.com</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Linked Accounts Section -->
+<div class="px-4">
+<!-- Section Header -->
+<h3 class="text-[#111318] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-0 pb-2 pt-6">Linked Accounts</h3>
+<!-- Instagram TextField -->
+<div class="flex w-full flex-wrap items-end gap-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111318] dark:text-gray-300 text-base font-medium leading-normal pb-2">Instagram</p>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-[#616f89]">alternate_email</span>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111318] dark:text-white dark:bg-background-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbdfe6] dark:border-gray-700 bg-white focus:border-primary h-14 placeholder:text-[#616f89] dark:placeholder:text-gray-500 pl-12 pr-4 text-base font-normal leading-normal" placeholder="username" value=""/>
+</div>
+</label>
+</div>
+<!-- TikTok TextField -->
+<div class="flex w-full flex-wrap items-end gap-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111318] dark:text-gray-300 text-base font-medium leading-normal pb-2">TikTok</p>
+<div class="relative flex items-center">
+<svg class="absolute left-4 h-5 w-5 text-[#616f89]" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.18 8.33a4.33 4.33 0 0 1-4-1.74 4.14 4.14 0 0 1-1.42-3.11v10.4a5.16 5.16 0 0 1-5.17 5.17A5.16 5.16 0 0 1 5.42 14a5.16 5.16 0 0 1 5.17-5.17h.34V4.58h-.34a9.42 9.42 0 0 0-9.42 9.42 9.42 9.42 0 0 0 9.42 9.42 9.42 9.42 0 0 0 9.42-9.42V10a6.52 6.52 0 0 0-3.33-1.67Z"></path></svg>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111318] dark:text-white dark:bg-background-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbdfe6] dark:border-gray-700 bg-white focus:border-primary h-14 placeholder:text-[#616f89] dark:placeholder:text-gray-500 pl-12 pr-4 text-base font-normal leading-normal" placeholder="your_handle" value=""/>
+</div>
+</label>
+</div>
+<!-- WhatsApp TextField -->
+<div class="flex w-full flex-wrap items-end gap-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111318] dark:text-gray-300 text-base font-medium leading-normal pb-2">WhatsApp</p>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-[#616f89]">call</span>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111318] dark:text-white dark:bg-background-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#dbdfe6] dark:border-gray-700 bg-white focus:border-primary h-14 placeholder:text-[#616f89] dark:placeholder:text-gray-500 pl-12 pr-4 text-base font-normal leading-normal" placeholder="phone_number" value=""/>
+</div>
+</label>
+</div>
+</div>
+<!-- Save Button -->
+<div class="px-4 pt-8">
+<button class="flex w-full items-center justify-center rounded-xl bg-primary h-14 text-white text-base font-bold leading-normal transition-transform duration-200 active:scale-[0.98]">Save Changes</button>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 h-28 bg-transparent z-20">
+<div class="absolute bottom-0 left-0 w-full h-24 bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 shadow-[0_-1px_4px_rgba(0,0,0,0.05)]">
+<div class="flex h-full items-center justify-around">
+<a class="flex flex-col items-center justify-center gap-1 text-[#616f89] dark:text-gray-400 w-1/5" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+<span class="text-xs font-medium">To Do</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[#616f89] dark:text-gray-400 w-1/5" href="#">
+<span class="material-symbols-outlined">dynamic_feed</span>
+<span class="text-xs font-medium">Feed</span>
+</a>
+<div class="w-1/5"></div> <!-- Placeholder for the large chat button -->
+<a class="flex flex-col items-center justify-center gap-1 text-[#616f89] dark:text-gray-400 w-1/5" href="#">
+<span class="material-symbols-outlined">topic</span>
+<span class="text-xs font-medium">Topics</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary dark:text-primary w-1/5" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="text-xs font-bold">Profile</span>
+</a>
+</div>
+</div>
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2">
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/40 transform transition-transform duration-200 active:scale-95">
+<span class="material-symbols-outlined text-3xl">chat_bubble</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EDA - To Do Lists</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --bg-light: #F7F7F9;
+      --surface-light: #FFFFFF;
+      --text-primary: #121212;
+      --text-secondary: #6B7280;
+      --text-tertiary: #9CA3AF;
+      --border-color: #EEEEF0;
+      --primary: #2563EB;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "var(--primary)",
+            "background-light": "var(--bg-light)",
+            "text-light-primary": "var(--text-primary)",
+            "text-light-secondary": "var(--text-secondary)",
+            "text-light-tertiary": "var(--text-tertiary)",
+            "surface-light": "var(--surface-light)",
+            "border-light": "var(--border-color)"
+          },
+          fontFamily: {
+            "sans": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "2xl": "1.25rem",
+            "3xl": "1.5rem",
+            "4xl": "2rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            'nav': '0px -4px 20px rgba(0, 0, 0, 0.04)',
+            'card': '0 4px 12px rgba(0,0,0,0.03)',
+            'chat': '0 8px 24px -4px rgba(37, 99, 235, 0.4)'
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-sans text-text-light-primary">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-10 bg-background-light/80 backdrop-blur-md">
+<div class="flex items-center p-4">
+<h1 class="text-text-light-primary text-3xl font-bold tracking-tight flex-1">To Do Lists</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 text-text-light-secondary gap-2 text-base font-bold leading-normal tracking-[0.015em]">
+<span class="material-symbols-outlined text-2xl">more_horiz</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 pb-32">
+<div class="px-4 py-4">
+<h2 class="text-lg font-bold text-text-light-primary">Today</h2>
+</div>
+<div class="flex flex-col gap-4 px-4">
+<div class="flex flex-col gap-3 rounded-3xl bg-gradient-to-br from-orange-50 to-orange-100/50 p-4 shadow-card border border-white">
+<div class="flex items-start gap-4">
+<input class="mt-1 h-5 w-5 rounded-md border-2 border-orange-200 bg-transparent text-orange-500 checked:bg-orange-500 checked:border-orange-500 focus:ring-2 focus:ring-orange-500/50 focus:ring-offset-2 focus:ring-offset-orange-50" type="checkbox"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-text-light-primary text-base font-semibold leading-tight">Draft Q3 report introduction</p>
+<p class="text-amber-600 text-sm font-medium leading-normal mt-1">Due: Tomorrow</p>
+</div>
+<div class="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-gray-100">
+<img alt="Video thumbnail for Q3 report task" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUA9tQ1NM_zuUJHhuaFrpyMuA_kPTS9CFkU3ZnDICH9r1h_pEbuvBOpyBN4J8KDppAyveLPRACDhhLHVyCCrWkvRB103DWVE5ahY6lS9XmLfCbvAc4apNd8p-K5uiLh7b5kyVYrw_2KpD-kVpJkHw4cUDjwoLdTOTmTlsnfwxVq2AKXl0umdilmkXgGZS24GxGFFAsx2ccV5XeRmuaLVgj2ELmTEe6BifW5wd8Lfas7ac_8E5YHkqOPwPbkfMEa0NJqU0abIHNADcL"/>
+</div>
+</div>
+<div class="flex items-center gap-2 pl-[36px]">
+<div class="flex items-center gap-1.5 rounded-full bg-white/60 px-2.5 py-1 text-xs font-medium text-text-light-secondary">
+<span class="material-symbols-outlined !text-sm">folder_open</span>
+<span>Q3 Report</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-3xl bg-gradient-to-br from-blue-50 to-blue-100/50 p-4 shadow-card border border-white">
+<div class="flex items-start gap-4">
+<input class="mt-1 h-5 w-5 rounded-md border-2 border-blue-200 bg-transparent text-blue-500 checked:bg-blue-500 checked:border-blue-500 focus:ring-2 focus:ring-blue-500/50 focus:ring-offset-2 focus:ring-offset-blue-50" type="checkbox"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-text-light-primary text-base font-semibold leading-tight">Follow up with Alex on the slides</p>
+<p class="text-text-light-secondary text-sm font-medium leading-normal mt-1">Due: Oct 28</p>
+</div>
+<div class="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-gray-100">
+<img alt="Video thumbnail for Alex follow-up task" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrWgYxpjL254j5ATXjiBR7eChrDt8fNVgEM_tmGSKCzn4dnJyvQ2IFRxuMk2t9zc0m5eacGSK6B6JLKr77qMKuuht5QsDgQQXZWreA4tirsLlGNMB-wYb27pcYTlEAPiHAK7BY1Tp9GWPB1ecwUiZlXMRHULtllU6HteFMCLGhdxaBRkVoQ2t82buOxvS1w8DDLQgBVf0o_q0h4IHHQnnZgI6C-WlsHf0yHPSjTERQfu3Gj7hFXLS5SFWUJVRoAjxo7y3mb37Cgqbl"/>
+</div>
+</div>
+<div class="flex items-center gap-2 pl-[36px]">
+<div class="flex items-center gap-1.5 rounded-full bg-white/60 px-2.5 py-1 text-xs font-medium text-text-light-secondary">
+<span class="material-symbols-outlined !text-sm">person</span>
+<span>Alex</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-3xl bg-gradient-to-br from-red-50 to-red-100/50 p-4 shadow-card border border-white">
+<div class="flex items-start gap-4">
+<input class="mt-1 h-5 w-5 rounded-md border-2 border-red-200 bg-transparent text-red-500 checked:bg-red-500 checked:border-red-500 focus:ring-2 focus:ring-red-500/50 focus:ring-offset-2 focus:ring-offset-red-50" type="checkbox"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-text-light-primary text-base font-semibold leading-tight">Schedule team sync for project kickoff</p>
+<p class="text-red-600 text-sm font-medium leading-normal mt-1">Due: Today</p>
+</div>
+</div>
+<div class="flex items-center gap-2 pl-[36px]">
+<div class="flex items-center gap-1.5 rounded-full bg-white/60 px-2.5 py-1 text-xs font-medium text-text-light-secondary">
+<span class="material-symbols-outlined !text-sm">folder_open</span>
+<span>Project Phoenix</span>
+</div>
+</div>
+</div>
+<div class="px-4 py-4 mt-4">
+<h2 class="text-lg font-bold text-text-light-primary">Completed</h2>
+</div>
+<div class="flex flex-col gap-3 rounded-3xl bg-surface-light p-4 shadow-card border border-white opacity-60">
+<div class="flex items-start gap-4">
+<input checked="" class="mt-1 h-5 w-5 rounded-md border-2 border-gray-300 bg-transparent text-gray-500 checked:bg-gray-500 checked:border-gray-500 focus:ring-2 focus:ring-gray-500/50 focus:ring-offset-2 focus:ring-offset-surface-light" type="checkbox"/>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-text-light-tertiary text-base font-medium leading-tight line-through">Finalize presentation deck</p>
+<p class="text-text-light-tertiary text-sm font-normal leading-normal mt-1">Due: Yesterday</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed inset-x-0 bottom-0 z-20">
+<div class="bg-surface-light/80 backdrop-blur-xl border-t border-border-light shadow-nav">
+<div class="grid grid-cols-5 items-center justify-around h-20 px-2">
+<a class="flex flex-col items-center justify-center gap-1 text-primary w-full" href="#">
+<span class="material-symbols-outlined !text-2xl" style="font-variation-settings: 'FILL' 1, 'wght' 400;">task_alt</span>
+<span class="text-xs font-semibold">To Do Lists</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-text-light-tertiary w-full" href="#">
+<span class="material-symbols-outlined !text-2xl">dynamic_feed</span>
+<span class="text-xs font-medium">Feed</span>
+</a>
+<a class="relative flex flex-col items-center justify-center gap-1 text-text-light-tertiary" href="#">
+<div class="absolute -top-7 flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-chat">
+<span class="material-symbols-outlined !text-3xl" style="font-variation-settings: 'FILL' 1, 'wght' 400;">chat_bubble</span>
+</div>
+<span class="text-xs font-medium mt-10">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-text-light-tertiary w-full" href="#">
+<span class="material-symbols-outlined !text-2xl">topic</span>
+<span class="text-xs font-medium">Topics</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-text-light-tertiary w-full" href="#">
+<span class="material-symbols-outlined !text-2xl">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EDA - Topics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        .material-symbols-outlined.filled {
+          font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#135bec",
+                "background-light": "#f7f8fa",
+                "background-dark": "#0A0A0A",
+              },
+              fontFamily: {
+                "display": ["Inter", "sans-serif"]
+              },
+              borderRadius: {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "2xl": "1rem",
+                "3xl": "1.5rem",
+                "4xl": "2rem",
+                "full": "9999px"
+              },
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+          background-color: #f7f8fa;
+        }
+    </body {
+      min-height: max(884px, 100dvh);
+      background-color: white;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white font-display text-slate-800">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-white/80 p-4 pb-3 pt-8 backdrop-blur-lg">
+<div class="flex items-center gap-2">
+<h1 class="text-4xl font-bold leading-tight tracking-tight text-slate-900">Topics</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex h-10 w-10 min-w-0 cursor-pointer items-center justify-center rounded-full bg-slate-100 p-0 text-base font-bold leading-normal text-slate-500 transition-colors hover:bg-slate-200">
+<span class="material-symbols-outlined text-slate-600" style="font-size: 28px;">search</span>
+</button>
+<button class="flex h-10 w-10 min-w-0 cursor-pointer items-center justify-center rounded-full bg-slate-100 p-0 text-base font-bold leading-normal text-slate-500 transition-colors hover:bg-slate-200">
+<span class="material-symbols-outlined text-slate-600" style="font-size: 28px;">more_vert</span>
+</button>
+</div>
+</header>
+<main class="flex-1 pb-24">
+<div class="p-4 pt-2">
+<div class="grid grid-cols-2 gap-4">
+<a class="group relative col-span-2 flex h-48 w-full flex-col justify-between overflow-hidden rounded-4xl bg-gradient-to-br from-pink-100 to-rose-50 p-5" href="#">
+<div class="flex items-start justify-between">
+<h3 class="text-2xl font-bold text-gray-800">Health</h3>
+<span class="material-symbols-outlined text-gray-500">favorite_border</span>
+</div>
+<div class="self-end text-right">
+<p class="text-sm font-medium text-gray-600">12 items</p>
+</div>
+</a>
+<a class="group relative flex h-48 w-full flex-col justify-between overflow-hidden rounded-4xl bg-gradient-to-br from-orange-100 to-amber-50 p-5" href="#">
+<div class="flex items-start justify-between">
+<h3 class="text-2xl font-bold text-gray-800">Travel</h3>
+<span class="material-symbols-outlined text-gray-500">favorite_border</span>
+</div>
+<div class="self-end text-right">
+<p class="text-sm font-medium text-gray-600">23 items</p>
+</div>
+</a>
+<a class="group relative flex h-48 w-full flex-col justify-between overflow-hidden rounded-4xl bg-gradient-to-br from-green-100 to-emerald-50 p-5" href="#">
+<div class="flex items-start justify-between">
+<h3 class="text-2xl font-bold text-gray-800">Food</h3>
+<span class="material-symbols-outlined text-gray-500">favorite_border</span>
+</div>
+<div class="self-end text-right">
+<p class="text-sm font-medium text-gray-600">35 items</p>
+</div>
+</a>
+<a class="group relative col-span-2 flex h-48 w-full flex-col justify-between overflow-hidden rounded-4xl bg-gradient-to-br from-sky-100 to-blue-50 p-5" href="#">
+<div class="flex items-start justify-between">
+<h3 class="text-2xl font-bold text-gray-800">Design</h3>
+<span class="material-symbols-outlined text-gray-500">favorite_border</span>
+</div>
+<div class="self-end text-right">
+<p class="text-sm font-medium text-gray-600">8 items</p>
+</div>
+</a>
+<a class="group relative flex h-48 w-full flex-col justify-between overflow-hidden rounded-4xl bg-gradient-to-br from-indigo-100 to-purple-50 p-5" href="#">
+<div class="flex items-start justify-between">
+<h3 class="text-2xl font-bold text-gray-800">AI</h3>
+<span class="material-symbols-outlined text-gray-500">favorite_border</span>
+</div>
+<div class="self-end text-right">
+<p class="text-sm font-medium text-gray-600">15 items</p>
+</div>
+</a>
+<div class="flex h-48 w-full flex-col items-center justify-center rounded-4xl border-2 border-dashed border-slate-200 bg-slate-50 text-slate-400 hover:bg-slate-100 hover:border-slate-300">
+<span class="material-symbols-outlined text-4xl">add</span>
+<p class="mt-2 text-sm font-medium">Add Topic</p>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 z-20 bg-white/80 backdrop-blur-lg">
+<div class="mx-auto flex h-20 w-full max-w-md items-center justify-around border-t border-slate-200/80 px-2">
+<a class="flex flex-col items-center gap-1.5 text-slate-500" href="#">
+<span class="material-symbols-outlined text-3xl">checklist</span>
+<span class="text-xs">To Do Lists</span>
+</a>
+<a class="flex flex-col items-center gap-1.5 text-slate-500" href="#">
+<span class="material-symbols-outlined text-3xl">dynamic_feed</span>
+<span class="text-xs">Feed</span>
+</a>
+<a class="relative -top-5 flex h-16 w-16 flex-col items-center justify-center gap-1.5 rounded-full bg-primary text-white shadow-lg" href="#">
+<span class="material-symbols-outlined text-4xl">chat_bubble</span>
+</a>
+<a class="flex flex-col items-center gap-1.5 text-slate-900" href="#">
+<span class="material-symbols-outlined filled text-3xl">grid_view</span>
+<span class="text-xs font-semibold">Topics</span>
+</a>
+<a class="flex flex-col items-center gap-1.5 text-slate-500" href="#">
+<span class="material-symbols-outlined text-3xl">person</span>
+<span class="text-xs">Profile</span>
+</a>
+</div>
+</div>
+</div>
+
+</body></html>

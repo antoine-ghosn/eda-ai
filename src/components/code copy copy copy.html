@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EDA - Search</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        @layer base {
+            :root {
+                --background-light: #FFFFFF;
+                --surface-light: #F7F7F7;
+                --text-primary-light: #1C1C1E;
+                --text-secondary-light: #8A8A8E;
+                --accent: #48D6B3;
+                --border-light: #E5E5E5;
+                --brand-blue: #0A84FF;
+            }
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2A4D8E",
+                        "background-light": "var(--background-light)",
+                        "surface-light": "var(--surface-light)",
+                        "text-primary-light": "var(--text-primary-light)",
+                        "text-secondary-light": "var(--text-secondary-light)",
+                        "accent": "var(--accent)",
+                        "border-light": "var(--border-light)",
+                        "brand-blue": "var(--brand-blue)",
+                    },
+                    fontFamily: {
+                        "body": ["Poppins", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+            background-color: var(--background-light);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-body text-text-primary-light">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<main class="flex-grow p-5 pb-36">
+<div class="mb-6">
+<div class="relative">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
+<span class="material-symbols-outlined text-text-secondary-light">search</span>
+</div>
+<input class="form-input h-14 w-full rounded-full border-none bg-surface-light py-2 pl-12 pr-4 text-base font-normal text-text-primary-light placeholder:text-text-secondary-light focus:outline-none focus:ring-2 focus:ring-brand-blue/50" placeholder="Find anything..." type="text"/>
+</div>
+</div>
+<div class="space-y-5">
+<div class="flex items-start gap-4">
+<div class="relative h-28 w-20 shrink-0 overflow-hidden rounded-xl bg-gray-200">
+<img class="absolute inset-0 h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6cPZB-5bcjyi5W41qGF__R_811Z_Xd3iPjnueeBzxo3fshKHU36yHS0OaZ0gCUU7nAO2Ku8MUjdNiYm9hVYXFYADIljT9b9G4HXk--I40quJxKlv_rLIyVQHDbL4ecL11HBD70ibz3vR6jKyFOnQ8rylFYix4a_DbdzFAybAIghvgyxC8-093Y9ifmuVxgp8BRhC9r5i5e1lN7kWFZGMrVpBYKYrumrrbKn2p7ag6kp0siBOeG9MJWIPStKqXlQVptHUsxhmypWb6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<span class="absolute bottom-1.5 left-1.5 rounded-md bg-black/40 px-1.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">01:15</span>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<p class="font-semibold leading-snug text-text-primary-light">Q3 Planning Call</p>
+<p class="text-sm leading-snug text-text-secondary-light">"...key <strong class="font-semibold text-accent">marketing budget</strong> for the next quarter needs to be finalized..."</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="relative h-28 w-20 shrink-0 overflow-hidden rounded-xl bg-gray-200">
+<img class="absolute inset-0 h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6cPZB-5bcjyi5W41qGF__R_811Z_Xd3iPjnueeBzxo3fshKHU36yHS0OaZ0gCUU7nAO2Ku8MUjdNiYm9hVYXFYADIljT9b9G4HXk--I40quJxKlv_rLIyVQHDbL4ecL11HBD70ibz3vR6jKyFOnQ8rylFYix4a_DbdzFAybAIghvgyxC8-093Y9ifmuVxgp8BRhC9r5i5e1lN7kWFZGMrVpBYKYrumrrbKn2p7ag6kp0siBOeG9MJWIPStKqXlQVptHUsxhmypWb6"/>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<p class="font-semibold leading-snug text-text-primary-light">Marketing Strategy Doc</p>
+<p class="text-sm leading-snug text-text-secondary-light">"The allocated <strong class="font-semibold text-accent">marketing budget</strong> for Q4 is set at $500,000."</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="relative h-28 w-20 shrink-0 overflow-hidden rounded-xl bg-gray-200">
+<img class="absolute inset-0 h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6cPZB-5bcjyi5W41qGF__R_811Z_Xd3iPjnueeBzxo3fshKHU36yHS0OaZ0gCUU7nAO2Ku8MUjdNiYm9hVYXFYADIljT9b9G4HXk--I40quJxKlv_rLIyVQHDbL4ecL11HBD70ibz3vR6jKyFOnQ8rylFYix4a_DbdzFAybAIghvgyxC8-093Y9ifmuVxgp8BRhC9r5i5e1lN7kWFZGMrVpBYKYrumrrbKn2p7ag6kp0siBOeG9MJWIPStKqXlQVptHUsxhmypWb6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<span class="absolute bottom-1.5 left-1.5 rounded-md bg-black/40 px-1.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">00:23</span>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<p class="font-semibold leading-snug text-text-primary-light">Voice Note - Project Phoenix</p>
+<p class="text-sm leading-snug text-text-secondary-light">"...we need to re-evaluate the <strong class="font-semibold text-accent">marketing budget</strong>."</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="relative h-28 w-20 shrink-0 overflow-hidden rounded-xl bg-gray-200">
+<img class="absolute inset-0 h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6cPZB-5bcjyi5W41qGF__R_811Z_Xd3iPjnueeBzxo3fshKHU36yHS0OaZ0gCUU7nAO2Ku8MUjdNiYm9hVYXFYADIljT9b9G4HXk--I40quJxKlv_rLIyVQHDbL4ecL11HBD70ibz3vR6jKyFOnQ8rylFYix4a_DbdzFAybAIghvgyxC8-093Y9ifmuVxgp8BRhC9r5i5e1lN7kWFZGMrVpBYKYrumrrbKn2p7ag6kp0siBOeG9MJWIPStKqXlQVptHUsxhmypWb6"/>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<p class="font-semibold leading-snug text-text-primary-light">Whiteboard Scan</p>
+<p class="text-sm leading-snug text-text-secondary-light">"Detected text: FY24 <strong class="font-semibold text-accent">Marketing Budget</strong> Allocation..."</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="relative h-28 w-20 shrink-0 overflow-hidden rounded-xl bg-gray-200">
+<img class="absolute inset-0 h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6cPZB-5bcjyi5W41qGF__R_811Z_Xd3iPjnueeBzxo3fshKHU36yHS0OaZ0gCUU7nAO2Ku8MUjdNiYm9hVYXFYADIljT9b9G4HXk--I40quJxKlv_rLIyVQHDbL4ecL11HBD70ibz3vR6jKyFOnQ8rylFYix4a_DbdzFAybAIghvgyxC8-093Y9ifmuVxgp8BRhC9r5i5e1lN7kWFZGMrVpBYKYrumrrbKn2p7ag6kp0siBOeG9MJWIPStKqXlQVptHUsxhmypWb6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<span class="absolute bottom-1.5 left-1.5 rounded-md bg-black/40 px-1.5 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">03:45</span>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<p class="font-semibold leading-snug text-text-primary-light">Campaign Kick-off</p>
+<p class="text-sm leading-snug text-text-secondary-light">"...on the <strong class="font-semibold text-accent">digital ad spend</strong> for the new campaign."</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="fixed inset-x-0 bottom-0 z-50 bg-surface-light/80 pb-3 pt-2 backdrop-blur-lg">
+<div class="mx-auto flex max-w-md items-center justify-around px-4">
+<a class="flex flex-1 flex-col items-center gap-1 text-text-secondary-light" href="#">
+<span class="material-symbols-outlined">checklist</span>
+<span class="text-[11px] font-medium">To Do Lists</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-text-secondary-light" href="#">
+<span class="material-symbols-outlined">dynamic_feed</span>
+<span class="text-[11px] font-medium">Feed</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1" href="#">
+<div class="-mt-6 flex h-16 w-16 items-center justify-center rounded-full bg-brand-blue shadow-lg shadow-brand-blue/30">
+<span class="material-symbols-outlined fill text-white" style="font-size: 32px; font-variation-settings: 'FILL' 1, 'wght' 500;">chat_bubble</span>
+</div>
+<span class="mt-1 text-[11px] font-semibold text-brand-blue">Chat</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-text-secondary-light" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="text-[11px] font-medium">Topics</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 text-text-secondary-light" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[11px] font-medium">Profile</span>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>
